@@ -186,9 +186,7 @@ form input, form textarea{
     font-weight: 300;
 }
 /* ----------------------------css for small screen--------------- */
-nav .fa-solid{
-    display:none;
-}
+
 @media only screen and (max-width:600px){
     #header{
         background-image: url(mobbg.jpg);
@@ -201,10 +199,7 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa-solid{
-        display:block;
-        font-size: 25px;
-    }
+
     nav ul{
         background: #ff2525;
         position: fixed;
@@ -220,12 +215,7 @@ nav .fa-solid{
         display: block;
         margin: 25px;
     }
-    nav ul .fa-solid{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    } 
+
 }
 #msg{
     color: #61b752;
