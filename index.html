@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatib1e" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Tushar Sakargayan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+              function openmenu(){
+                  sidemenu.style.right="0";
+              }
+              function closemenu(){
+                  sidemenu.style.right="-200px";
+              }  
+
+  </script>
+    <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+            
+        }
+    </script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="ts2.jpg" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href='#header'>Home</a></li>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Tushar<br></span> Sakargayan from Indore</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a student at the Acropolis Institute of Technology and Research, pursuing a Bachelor of
+                        Technology degree in Computer Science and Engineering
+                        with a specialization in Artificial Intelligence and Machine Learning. I'm highly motivated
+                        individual with a strong understanding of emerging
+                        technologies. Proficient in programming languages such as C, Python, and Java. Able to thrive in
+                        high-pressure environments and adapt to changing situations to deliver optimal results and the
+                        ability to collaborate effectively with colleagues.
+                    </p>
+                    <div class="tab-titles">
+                        <p class=" tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class=" tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class=" tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class=" tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul><b>
+                                <li><span>C/C++</span></li>
+                                <li><span>JAVA CORE</span></li>
+                                <li><span>JAVA Adv.</span></li>
+                                <li><span>PYTHON</span></li>
+                                <li><span>MACHINE LEARNING</span></li>
+                                <li><span>HTML/CSS</span></li>
+                                <li><span>JAVASCRIPT</span></li>
+                            </b>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><b><span>VOICE TO CODE</span></b>
+                                <br>
+                                Created a “Speech to Code” application that converts spoken pseudo
+                                code into functional code.
+                                <br><br>
+                                Utilized Python, Machine Learning, and Natural Language Processing
+                                (NLP) technologies to develop and implement the application.
+                                <br><br>
+                                Achieved a 92% accuracy rate in code conversion, demonstrating
+                                proficiency in programming and algorithm development.
+
+
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><b><span>SMARTCITY INDORE</span></b>
+
+                                <b><i><br>April 2023 - June 2023<br>Key Responsibilities: </i></b>
+                                <br><br>
+                                Engineered an IoT-based Smart Dustbin during an internship,
+                                leveraging sensors, microcontrollers, and Machine Learning algorithms
+                                <br>
+                                to revolutionize waste management. The project was awarded a patent
+                                for its innovative design. (Patent CBR No. - 207631)
+                                <br><br>
+                                Designed and built a Fire Fighting Rover that autonomously detects
+                                and extinguishes fires using advanced Machine Learning techniques.
+                                <br>
+
+
+
+                            </li>
+                            <li><b><span>HEMANS AI</span></b>
+
+                                <b><i><br>August 2022 - December 2022 <br>Key Responsibilities:</i></b>
+
+                                <br><br>
+                                Streamlined the content creation process by developing an advanced
+                                markdown editor.
+
+                                <br><br>
+                                Enhanced user interaction by creating a speech-recognition application
+                                using JavaScript.
+                                <br>
+
+
+
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><b><span>HIGH SCHOOL</span></b>
+                                <br>
+                                Completed high school from ST Norbert
+                                School, affiliated with CBSE Board, Indore
+                                in 2018 with a score of 59%.
+
+
+
+
+                            </li>
+                            <br>
+                            <li><b><span>SECONDARY SCHOOL</span></b>
+
+
+                                <br>
+                                Completed secondary school from Shree
+                                Neema Vidhya Niketan ,affiliated with MP
+                                Board, Indore in 2020 with a score of 76%.
+
+
+
+
+
+
+                            </li>
+                            <br>
+                            <li><b><span>GRADUATION</span></b>
+                                <br>
+                                Currently pursuing a Bachelor of
+                                Technology in CSE - Artificial Intelligence
+                                and Machine Learning from Acropolis
+                                institute of Technology and Research,
+                                Indore
+
+
+
+
+
+
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <img src="1.jpg">
+
+
+
+        <!-- ------------------------contact-------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <!-- <a href="Tushar Sakargayan resume upd.pdf" download class="btn bt2">Download Resume</i></a> -->
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>sakargayentushar@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9893443791</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/tushar-sakargayan"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/T-Skrgyn"><i class="fab fa-github"></i></a>
+                            <a href="https://instagram.com/the_tushar_sakargayen?igshid=OGQ5ZDc2ODk2ZA=="><i
+                                    class="fab fa-instagram-square"></i></i></a>
+                            <br>
+                            <div class="btn"><a href="Tushar Sakargayan resume upd.pdf"><img src="dwn.png"
+                                        class="dwn"></a></div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea type="message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn"><img src="submit2.png" class="sub"></button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @Tushar Sakargayan.</p>
+            </div>
+        </div>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzXS8-iNccVvtb3_Uym9OSleuS9IKg4ugp4UGmhku5-siestdnqPOzkp0-2tmVU2So8hQ/exec'
+            const form = document.forms['submit-to-google-sheet'] 
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+        
+</body>
+
+</html>
