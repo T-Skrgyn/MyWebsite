@@ -12,7 +12,7 @@ body{
      color: #fff;
 }
 #header{
-    width: 99%;
+    width: 100%;
     height: 100vh;
     background-image: url(unnamed\ \(1\).png);
     background-size: cover;
@@ -190,6 +190,7 @@ form input, form textarea{
 @media only screen and (max-width:600px){
     #header{
         background-image: url(mobbg.jpg);
+        width: 100%;
     }
     .header-text{
         color: #ababab;
@@ -199,22 +200,40 @@ form input, form textarea{
     .header-text h1{
         font-size: 30px;
     }
+    .tab-links{
+        margin-right:10px;
+        font-size: 15px;
+        font-weight: 90;
+        cursor:pointer;
+        position: relative;
+    }
+    form input, form textarea{
+        width: 170%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    .contact-left{
+        flex-basis:50%;
+    
+    }
+    .contact-left p{
+        margin-top:50px ;
+    }
+    .contact-left p i{
+        color: #ff2525;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+   
 
-    nav ul{
-        background: #ff2525;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition:right 0.5s ;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
+
+
 
 }
 #msg{
