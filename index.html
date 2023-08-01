@@ -31,12 +31,17 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
             
+            function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+            }
             
         }
     </script>
 </head>
 
 <body>
+    
+
     
     <div id="header">
         <div class="container">
@@ -47,6 +52,7 @@
                     <li><a href='#header'>Home</a></li>
                     <li><a href='#about'>About</a></li>
                     <li><a href='#contact'>Contact</a></li>
+                    <button id="scrollUpBtn" onclick="scrollToTop()"><a href="#header"><i class="fa-regular fa-circle-up"></a></i></button>
                     <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
                 </ul>
                 <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
@@ -220,8 +226,7 @@
                             <a href="https://instagram.com/the_tushar_sakargayen?igshid=OGQ5ZDc2ODk2ZA=="><i
                                     class="fab fa-instagram-square"></i></i></a>
                             <br>
-                            <div class="btn"><a href="Tushar Sakargayan resume upd.pdf"><img src="dwn.png"
-                                        class="dwn"></a></div>
+                            <div class="btn"><a href="Tushar Sakargayan resume upd.pdf"><img src="dwn.png"class="dwn"></a></div>
 
 
                         </div>
