@@ -238,17 +238,23 @@ form input, form textarea{
         border-radius: 6px;
     }
     .contact-left{
-        flex-basis:50%;
+        flex-basis:100%;
     
     }
     .contact-left p{
         margin-top:50px ;
+        
+    }
+    .contact-left p span{
+        margin-left: 35px;
+        margin-top: -10px ;
     }
     .contact-left p i{
         color: #ff2525;
         margin-right: 15px;
         font-size: 25px;
     }
+    
    
 
 
