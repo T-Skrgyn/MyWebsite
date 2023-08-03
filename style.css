@@ -219,10 +219,18 @@ form input, form textarea{
     .header-text h1{
         font-size: 30px;
     }
+    .tab-titles{
+        display:block;
+        font-size: 9px;
+        display:flex;
+        margin:15px -15px;
+    
+    }
     .tab-links{
+
         margin-right:10px;
         font-size: 15px;
-        font-weight: 90;
+        font-weight: 70;
         cursor:pointer;
         position: relative;
     }
